@@ -51,7 +51,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
     
-    let gifUrl = 'https://i.imgur.com/4HMupHz.gif';
+    let gifUrl = 'https://tenor.com/en-IN/view/limon-gif-531656813525023077';
 let gifPath = __dirname + '/cache/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
